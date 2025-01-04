@@ -59,7 +59,10 @@ namespace EntityFrameworkIstatistics
             var stockCountLessThanOneHundred = istatisticEntities.TblProduct.Where(x => x.ProductStock < 100).Count();
             lblStockCountLessThanOneHundred.Text = stockCountLessThanOneHundred.ToString();
 
-
+            //Kategorisi sebze ve durumu aktif olan ürün stok toplamı
+            int id = istatisticEntities.TblCategory.Where(x => x.CategoryName == "Sebze").Select(y => y.CategoryId).FirstOrDefault();
+            var productStockCountByCategoryNameIsSebzeAndStatusIsTrue = istatisticEntities.TblProduct.Where(x => x.CategoryId == (istatisticEntities.TblCategory.Where(z => z.CategoryName == "Sebze").Select(y => y.CategoryId).FirstOrDefault()) && x.ProductStatus == true).Sum(y => y.ProductStock);
+            lblProductCategorySebzeAndStatusTrue.Text = productStockCountByCategoryNameIsSebzeAndStatusIsTrue.ToString();
 
 
         }
