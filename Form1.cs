@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Contexts;
 using System.Windows.Forms;
 
 namespace EntityFrameworkIstatistics
@@ -17,7 +13,7 @@ namespace EntityFrameworkIstatistics
             InitializeComponent();
         }
         DbIstatisticEntities istatisticEntities = new DbIstatisticEntities();
-        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -43,7 +39,7 @@ namespace EntityFrameworkIstatistics
 
             //Ortalama ürün fiyatı
             var averageProductPrice = istatisticEntities.TblProduct.Average(x => x.ProductPrice);
-            lblProductAveragePrice.Text = averageProductPrice.ToString()+" TL";
+            lblProductAveragePrice.Text = averageProductPrice.ToString() + " TL";
 
             //Toplam meyve stok sayısı
             var totalProductCountByCategoryIsFruit = istatisticEntities.TblProduct.Where(category => category.CategoryId == 1).Sum(stock => stock.ProductStock);
@@ -64,6 +60,18 @@ namespace EntityFrameworkIstatistics
             var productStockCountByCategoryNameIsSebzeAndStatusIsTrue = istatisticEntities.TblProduct.Where(x => x.CategoryId == (istatisticEntities.TblCategory.Where(z => z.CategoryName == "Sebze").Select(y => y.CategoryId).FirstOrDefault()) && x.ProductStatus == true).Sum(y => y.ProductStock);
             lblProductCategorySebzeAndStatusTrue.Text = productStockCountByCategoryNameIsSebzeAndStatusIsTrue.ToString();
 
+            //Türkiyeden yapılan siparişler
+            var OrderCountFromTurkiye = istatisticEntities.Database.SqlQuery<int>("Select count(*) from TblOrder where CustomerId In (select CustomerId from TblCustomer where CustomerCountry='Türkiye')").FirstOrDefault();
+            lblOrderCountFromTurkiye.Text = OrderCountFromTurkiye.ToString();
+
+            //Türkiyeden yapılan siparişler EF METHODU İle
+            var turkishCustomerIds = istatisticEntities.TblCustomer.Where(x => x.CustomerCountry == "Türkiye").
+                Select(y => y.CustomerId).
+                ToList();
+
+            var orderCountFromTurkiyeWithEF = istatisticEntities.TblOrder.Count(z => turkishCustomerIds.Contains(z.CustomerId.Value));
+            lblOrderCountFromTurkiyeEF.Text = orderCountFromTurkiyeWithEF.ToString();
+            
 
         }
     }
