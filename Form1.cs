@@ -123,6 +123,19 @@ namespace EntityFrameworkIstatistics
             lblActiveProductCount.Text = activeProductCount.ToString();
 
 
+            //Toplam ayran stok satışlarından kazanılan miktar
+            var ayranStock = istatisticEntities.TblProduct.Where(x => x.ProductName == "Ayran").Select(y2 => y2.ProductStock).FirstOrDefault();
+            var ayranPrice = istatisticEntities.TblProduct.Where(x => x.ProductName == "Ayran").Select(y => y.ProductPrice).FirstOrDefault();
+            var totalAyranStockPrice = ayranStock * ayranPrice;
+            lblTotalPriceStockByAyran.Text = totalAyranStockPrice + " ₺";
+
+
+            //Sistemde son sipariş veren  müşterinin adı
+            var lastCustomerID = istatisticEntities.TblOrder.OrderByDescending(x => x.OrderId).Select(y => y.CustomerId).FirstOrDefault();
+            var lastCustomerName = istatisticEntities.TblCustomer.Where(x => x.CustomerId == lastCustomerID).Select(y => y.CustomerName).FirstOrDefault();
+            lblLastCustomerName.Text = lastCustomerName.ToString();
+
+
 
 
 
