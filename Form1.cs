@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Windows.Forms;
@@ -136,8 +137,9 @@ namespace EntityFrameworkIstatistics
             lblLastCustomerName.Text = lastCustomerName.ToString();
 
 
-
-
+            //Ülke çeşitliligi sayısı
+            var countryDifferentCount = istatisticEntities.TblCustomer.Select(x => x.CustomerCountry).Distinct().Count();
+            lblCountryDifferent.Text = countryDifferentCount.ToString() +" Farklı ülke vardır.";
 
         }
     }
