@@ -71,7 +71,60 @@ namespace EntityFrameworkIstatistics
 
             var orderCountFromTurkiyeWithEF = istatisticEntities.TblOrder.Count(z => turkishCustomerIds.Contains(z.CustomerId.Value));
             lblOrderCountFromTurkiyeEF.Text = orderCountFromTurkiyeWithEF.ToString();
-            
+
+
+            //Siparişler içinde kategorisi meyve olan ürünlerin toplam satış fiyatı SQL İLE
+            try
+            {
+                using (var context = new DbIstatisticEntities())
+                {
+                    // SQL sorgusunu çalıştır ve sonucu al
+                    var result = context.Database.SqlQuery<decimal?>(
+                        "SELECT SUM(o.TotalPrice) as ToplamPrice " +
+                        "FROM TblOrder o " +
+                        "JOIN TblProduct p ON o.ProductId = p.ProductId " +
+                        "JOIN TblCategory c ON p.CategoryId = c.CategoryId " +
+                        "WHERE c.CategoryName = 'Meyve'").FirstOrDefault();
+
+                    // Eğer sonuç null ise 0 olarak göster, değilse sonucu formatla
+                    lblOrderTotalPriceByCategoryIsFruit.Text =
+                        (result ?? 0).ToString("N2") + " TL";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda loglama veya kullanıcıya bilgi verme
+                lblOrderTotalPriceByCategoryIsFruit.Text = "Hata: " + ex.Message;
+            }
+
+            // //Siparişler içinde kategorisi meyve olan ürünlerin toplam satış fiyatı EF İLE
+            var OrderTotalPriceByCategoryIsFruitEf = (from o in istatisticEntities.TblOrder
+                                                      join p in istatisticEntities.TblProduct on o.ProductId equals p.ProductId
+                                                      join c in istatisticEntities.TblCategory on p.CategoryId equals c.CategoryId
+                                                      where c.CategoryName == "Meyve"
+                                                      select o.TotalPrice
+                                                    ).Sum();
+
+            lblOrderTotalPriceByCategoryIsFruitEF.Text = OrderTotalPriceByCategoryIsFruitEf.ToString() + " TL";
+
+            //En Son eklenen ürünün adı
+            var LastProductName = istatisticEntities.TblProduct.OrderByDescending(x => x.ProductId).Select(y => y.ProductName).FirstOrDefault();
+            lblLastProductName.Text = LastProductName.ToString();
+
+
+            //En son eklenen ürünün kategorisi
+            var LastProductCategoryId = istatisticEntities.TblProduct.OrderByDescending(x => x.ProductId).Select(y => y.CategoryId).FirstOrDefault();
+            var LastProductCategoryName = istatisticEntities.TblCategory.Where(x => x.CategoryId == LastProductCategoryId).Select(y => y.CategoryName).FirstOrDefault();
+            lblLastProductCategoryName.Text = LastProductCategoryName.ToString();
+
+
+            //Aktif ürün sayısı
+            var activeProductCount = istatisticEntities.TblProduct.Where(x => x.ProductStatus == true).Count();
+            lblActiveProductCount.Text = activeProductCount.ToString();
+
+
+
+
 
         }
     }
