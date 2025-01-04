@@ -47,7 +47,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblStockCountLessThanOneHundred = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblTotalPriceByProductNameIsGazoz = new System.Windows.Forms.Label();
@@ -118,7 +118,7 @@
             this.panel1.Location = new System.Drawing.Point(14, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(242, 187);
+            this.panel1.Size = new System.Drawing.Size(261, 187);
             this.panel1.TabIndex = 0;
             // 
             // lblCategoryCount
@@ -146,10 +146,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel2.Controls.Add(this.lblProductCount);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(289, 15);
+            this.panel2.Location = new System.Drawing.Point(292, 15);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 187);
+            this.panel2.Size = new System.Drawing.Size(261, 187);
             this.panel2.TabIndex = 1;
             // 
             // lblProductCount
@@ -177,10 +177,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel3.Controls.Add(this.lblCustomerCount);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(563, 15);
+            this.panel3.Location = new System.Drawing.Point(575, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(242, 187);
+            this.panel3.Size = new System.Drawing.Size(261, 187);
             this.panel3.TabIndex = 2;
             // 
             // lblCustomerCount
@@ -208,10 +208,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(130)))), ((int)(((byte)(173)))));
             this.panel4.Controls.Add(this.lblOrderCount);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(835, 15);
+            this.panel4.Location = new System.Drawing.Point(851, 15);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(242, 187);
+            this.panel4.Size = new System.Drawing.Size(261, 187);
             this.panel4.TabIndex = 2;
             // 
             // lblOrderCount
@@ -239,10 +239,10 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(156)))), ((int)(((byte)(137)))));
             this.panel5.Controls.Add(this.lblProductTotalStock);
             this.panel5.Controls.Add(this.label10);
-            this.panel5.Location = new System.Drawing.Point(1099, 15);
+            this.panel5.Location = new System.Drawing.Point(1128, 15);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 187);
+            this.panel5.Size = new System.Drawing.Size(261, 187);
             this.panel5.TabIndex = 3;
             // 
             // lblProductTotalStock
@@ -270,10 +270,10 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(156)))), ((int)(((byte)(137)))));
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(1099, 210);
+            this.panel6.Location = new System.Drawing.Point(1128, 210);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(242, 187);
+            this.panel6.Size = new System.Drawing.Size(261, 187);
             this.panel6.TabIndex = 8;
             // 
             // label11
@@ -299,43 +299,43 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(130)))), ((int)(((byte)(173)))));
-            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.lblStockCountLessThanOneHundred);
             this.panel7.Controls.Add(this.label14);
-            this.panel7.Location = new System.Drawing.Point(835, 210);
+            this.panel7.Location = new System.Drawing.Point(851, 210);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(242, 187);
+            this.panel7.Size = new System.Drawing.Size(261, 187);
             this.panel7.TabIndex = 6;
             // 
-            // label13
+            // lblStockCountLessThanOneHundred
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(83, 99);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 25);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "label13";
+            this.lblStockCountLessThanOneHundred.AutoSize = true;
+            this.lblStockCountLessThanOneHundred.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStockCountLessThanOneHundred.Location = new System.Drawing.Point(83, 99);
+            this.lblStockCountLessThanOneHundred.Name = "lblStockCountLessThanOneHundred";
+            this.lblStockCountLessThanOneHundred.Size = new System.Drawing.Size(83, 25);
+            this.lblStockCountLessThanOneHundred.TabIndex = 1;
+            this.lblStockCountLessThanOneHundred.Text = "label13";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(49, 22);
+            this.label14.Location = new System.Drawing.Point(-4, 13);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(127, 22);
+            this.label14.Size = new System.Drawing.Size(272, 22);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Sipariş Sayısı";
+            this.label14.Text = "Stok Sayısı 100\'den Az Ürünler";
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel8.Controls.Add(this.lblTotalPriceByProductNameIsGazoz);
             this.panel8.Controls.Add(this.label16);
-            this.panel8.Location = new System.Drawing.Point(563, 210);
+            this.panel8.Location = new System.Drawing.Point(575, 210);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(242, 187);
+            this.panel8.Size = new System.Drawing.Size(261, 187);
             this.panel8.TabIndex = 7;
             // 
             // lblTotalPriceByProductNameIsGazoz
@@ -363,10 +363,10 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel9.Controls.Add(this.lblProductCountByCategoryIsFruit);
             this.panel9.Controls.Add(this.label18);
-            this.panel9.Location = new System.Drawing.Point(289, 210);
+            this.panel9.Location = new System.Drawing.Point(292, 210);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(242, 187);
+            this.panel9.Size = new System.Drawing.Size(261, 187);
             this.panel9.TabIndex = 5;
             // 
             // lblProductCountByCategoryIsFruit
@@ -397,7 +397,7 @@
             this.panel10.Location = new System.Drawing.Point(14, 210);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(242, 187);
+            this.panel10.Size = new System.Drawing.Size(261, 187);
             this.panel10.TabIndex = 4;
             // 
             // lblProductAveragePrice
@@ -425,10 +425,10 @@
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(156)))), ((int)(((byte)(137)))));
             this.panel11.Controls.Add(this.label21);
             this.panel11.Controls.Add(this.label22);
-            this.panel11.Location = new System.Drawing.Point(1099, 405);
+            this.panel11.Location = new System.Drawing.Point(1128, 405);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(242, 187);
+            this.panel11.Size = new System.Drawing.Size(261, 187);
             this.panel11.TabIndex = 13;
             // 
             // label21
@@ -456,10 +456,10 @@
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(130)))), ((int)(((byte)(173)))));
             this.panel12.Controls.Add(this.label23);
             this.panel12.Controls.Add(this.label24);
-            this.panel12.Location = new System.Drawing.Point(835, 405);
+            this.panel12.Location = new System.Drawing.Point(851, 405);
             this.panel12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(242, 187);
+            this.panel12.Size = new System.Drawing.Size(261, 187);
             this.panel12.TabIndex = 11;
             // 
             // label23
@@ -487,10 +487,10 @@
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel13.Controls.Add(this.label25);
             this.panel13.Controls.Add(this.label26);
-            this.panel13.Location = new System.Drawing.Point(563, 405);
+            this.panel13.Location = new System.Drawing.Point(575, 405);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(242, 187);
+            this.panel13.Size = new System.Drawing.Size(261, 187);
             this.panel13.TabIndex = 12;
             // 
             // label25
@@ -518,10 +518,10 @@
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel14.Controls.Add(this.label27);
             this.panel14.Controls.Add(this.label28);
-            this.panel14.Location = new System.Drawing.Point(289, 405);
+            this.panel14.Location = new System.Drawing.Point(292, 405);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(242, 187);
+            this.panel14.Size = new System.Drawing.Size(261, 187);
             this.panel14.TabIndex = 10;
             // 
             // label27
@@ -552,7 +552,7 @@
             this.panel15.Location = new System.Drawing.Point(14, 405);
             this.panel15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(242, 187);
+            this.panel15.Size = new System.Drawing.Size(261, 187);
             this.panel15.TabIndex = 9;
             // 
             // label29
@@ -580,10 +580,10 @@
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(156)))), ((int)(((byte)(137)))));
             this.panel16.Controls.Add(this.label31);
             this.panel16.Controls.Add(this.label32);
-            this.panel16.Location = new System.Drawing.Point(1099, 600);
+            this.panel16.Location = new System.Drawing.Point(1128, 600);
             this.panel16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(242, 187);
+            this.panel16.Size = new System.Drawing.Size(261, 187);
             this.panel16.TabIndex = 18;
             // 
             // label31
@@ -611,10 +611,10 @@
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(130)))), ((int)(((byte)(173)))));
             this.panel17.Controls.Add(this.label33);
             this.panel17.Controls.Add(this.label34);
-            this.panel17.Location = new System.Drawing.Point(835, 600);
+            this.panel17.Location = new System.Drawing.Point(851, 600);
             this.panel17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(242, 187);
+            this.panel17.Size = new System.Drawing.Size(261, 187);
             this.panel17.TabIndex = 16;
             // 
             // label33
@@ -642,10 +642,10 @@
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel18.Controls.Add(this.label35);
             this.panel18.Controls.Add(this.label36);
-            this.panel18.Location = new System.Drawing.Point(563, 600);
+            this.panel18.Location = new System.Drawing.Point(575, 600);
             this.panel18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(242, 187);
+            this.panel18.Size = new System.Drawing.Size(261, 187);
             this.panel18.TabIndex = 17;
             // 
             // label35
@@ -673,10 +673,10 @@
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
             this.panel19.Controls.Add(this.label37);
             this.panel19.Controls.Add(this.label38);
-            this.panel19.Location = new System.Drawing.Point(289, 600);
+            this.panel19.Location = new System.Drawing.Point(292, 600);
             this.panel19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(242, 187);
+            this.panel19.Size = new System.Drawing.Size(261, 187);
             this.panel19.TabIndex = 15;
             // 
             // label37
@@ -707,7 +707,7 @@
             this.panel20.Location = new System.Drawing.Point(14, 600);
             this.panel20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(242, 187);
+            this.panel20.Size = new System.Drawing.Size(261, 187);
             this.panel20.TabIndex = 14;
             // 
             // label39
@@ -736,7 +736,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1349, 795);
+            this.ClientSize = new System.Drawing.Size(1401, 795);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel18);
@@ -833,7 +833,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblStockCountLessThanOneHundred;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lblTotalPriceByProductNameIsGazoz;

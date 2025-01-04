@@ -55,6 +55,13 @@ namespace EntityFrameworkIstatistics
             var totalPriceByProductNameIsGazoz = totalPriceByProductNameIsGazozGetStock * totalPriceByProductNameIsGazozGetUnitPrice;
             lblTotalPriceByProductNameIsGazoz.Text = totalPriceByProductNameIsGazoz.ToString() + " TL";
 
+            //Stok Sayısı 100'den Az Ürünler
+            var stockCountLessThanOneHundred = istatisticEntities.TblProduct.Where(x => x.ProductStock < 100).Count();
+            lblStockCountLessThanOneHundred.Text = stockCountLessThanOneHundred.ToString();
+
+
+
+
         }
     }
 }
