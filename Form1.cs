@@ -16,9 +16,16 @@ namespace EntityFrameworkIstatistics
         {
             InitializeComponent();
         }
+        DbIstatisticEntities istatisticEntities = new DbIstatisticEntities();
+        
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            //Toplam kategori sayısı
+            int categoryCount = istatisticEntities.TblCategory.Count();
+            lblCategoryCount.Text = categoryCount.ToString();
+
+
 
         }
     }
