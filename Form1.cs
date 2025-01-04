@@ -25,6 +25,16 @@ namespace EntityFrameworkIstatistics
             int categoryCount = istatisticEntities.TblCategory.Count();
             lblCategoryCount.Text = categoryCount.ToString();
 
+            //Toplam ürün sayısı
+            int productCount = istatisticEntities.TblProduct.Count();
+            lblProductCount.Text = productCount.ToString();
+
+
+            //Toplam ürün sayısı
+            int customerCount = istatisticEntities.TblCustomer.Count();
+            lblCustomerCount.Text = customerCount.ToString();
+
+
 
 
         }

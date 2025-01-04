@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblCategoryCount = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblProductCount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblCustomerCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -121,16 +121,6 @@
             this.panel1.Size = new System.Drawing.Size(242, 187);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(49, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kategori Sayısı";
-            // 
             // lblCategoryCount
             // 
             this.lblCategoryCount.AutoSize = true;
@@ -141,10 +131,20 @@
             this.lblCategoryCount.TabIndex = 1;
             this.lblCategoryCount.Text = "label2";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(49, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kategori Sayısı";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblProductCount);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(289, 15);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -152,15 +152,15 @@
             this.panel2.Size = new System.Drawing.Size(242, 187);
             this.panel2.TabIndex = 1;
             // 
-            // label3
+            // lblProductCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(83, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "label3";
+            this.lblProductCount.AutoSize = true;
+            this.lblProductCount.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductCount.Location = new System.Drawing.Point(95, 99);
+            this.lblProductCount.Name = "lblProductCount";
+            this.lblProductCount.Size = new System.Drawing.Size(71, 25);
+            this.lblProductCount.TabIndex = 1;
+            this.lblProductCount.Text = "label3";
             // 
             // label4
             // 
@@ -175,7 +175,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(112)))));
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lblCustomerCount);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(563, 15);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -183,15 +183,15 @@
             this.panel3.Size = new System.Drawing.Size(242, 187);
             this.panel3.TabIndex = 2;
             // 
-            // label5
+            // lblCustomerCount
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(83, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 25);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "label5";
+            this.lblCustomerCount.AutoSize = true;
+            this.lblCustomerCount.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerCount.Location = new System.Drawing.Point(95, 99);
+            this.lblCustomerCount.Name = "lblCustomerCount";
+            this.lblCustomerCount.Size = new System.Drawing.Size(71, 25);
+            this.lblCustomerCount.TabIndex = 1;
+            this.lblCustomerCount.Text = "label5";
             // 
             // label6
             // 
@@ -818,10 +818,10 @@
         private System.Windows.Forms.Label lblCategoryCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblProductCount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblCustomerCount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label7;
