@@ -38,10 +38,10 @@
             this.lblCustomerCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblOrderCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblProductTotalStock = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -206,7 +206,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(130)))), ((int)(((byte)(173)))));
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblOrderCount);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Location = new System.Drawing.Point(835, 15);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -214,15 +214,15 @@
             this.panel4.Size = new System.Drawing.Size(242, 187);
             this.panel4.TabIndex = 2;
             // 
-            // label7
+            // lblOrderCount
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(83, 99);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 25);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "label7";
+            this.lblOrderCount.AutoSize = true;
+            this.lblOrderCount.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderCount.Location = new System.Drawing.Point(83, 99);
+            this.lblOrderCount.Name = "lblOrderCount";
+            this.lblOrderCount.Size = new System.Drawing.Size(71, 25);
+            this.lblOrderCount.TabIndex = 1;
+            this.lblOrderCount.Text = "label7";
             // 
             // label8
             // 
@@ -237,7 +237,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(156)))), ((int)(((byte)(137)))));
-            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.lblProductTotalStock);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(1099, 15);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -245,25 +245,25 @@
             this.panel5.Size = new System.Drawing.Size(242, 187);
             this.panel5.TabIndex = 3;
             // 
-            // label9
+            // lblProductTotalStock
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(83, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 25);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "label9";
+            this.lblProductTotalStock.AutoSize = true;
+            this.lblProductTotalStock.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductTotalStock.Location = new System.Drawing.Point(95, 99);
+            this.lblProductTotalStock.Name = "lblProductTotalStock";
+            this.lblProductTotalStock.Size = new System.Drawing.Size(71, 25);
+            this.lblProductTotalStock.TabIndex = 1;
+            this.lblProductTotalStock.Text = "label9";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(49, 22);
+            this.label10.Location = new System.Drawing.Point(36, 22);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(127, 22);
+            this.label10.Size = new System.Drawing.Size(179, 22);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Sipariş Sayısı";
+            this.label10.Text = "Toplam Stok Sayısı:";
             // 
             // panel6
             // 
@@ -824,10 +824,10 @@
         private System.Windows.Forms.Label lblCustomerCount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblOrderCount;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblProductTotalStock;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;

@@ -29,10 +29,18 @@ namespace EntityFrameworkIstatistics
             int productCount = istatisticEntities.TblProduct.Count();
             lblProductCount.Text = productCount.ToString();
 
-
-            //Toplam ürün sayısı
+            //Toplam Müşteri sayısı
             int customerCount = istatisticEntities.TblCustomer.Count();
             lblCustomerCount.Text = customerCount.ToString();
+
+            //Toplam sipariş sayısı
+            int orderCount = istatisticEntities.TblOrder.Count();
+            lblOrderCount.Text = orderCount.ToString();
+
+            //Toplam Stok Sayısı
+            var totalProductStockCount = istatisticEntities.TblProduct.Sum(x => x.ProductStock);
+            lblProductTotalStock.Text = totalProductStockCount.ToString();
+
 
 
 
